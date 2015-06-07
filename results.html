@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>The List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      Your score is: <span id="score"></span>
+      <form>
+        <div class="form-group">
+          <input class="btn btn-default" type="button" id="reset" value="Reset" onclick="tList.views.results.onReset()">
+        </div>
+      </form>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/app.js'></script>
+    <script>
+      tList.views.results.update();
+    </script>
+  </body>
+</html>
